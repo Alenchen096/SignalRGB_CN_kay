@@ -85,7 +85,7 @@ function grabColors(shutdown = false) {
 		rgbdata[iLedIdx+2] = color[2];
 	}
 
-	let Fill = new Array(20).fill(0);  
+	let Fill = 新建 Array(20).fill(0);  
 	rgbdata = rgbdata.concat(Fill);
 	return rgbdata;
 }
@@ -99,10 +99,10 @@ function hexToRgb(hex) {
 	return colors;
 }
 
-export function Validate(endpoint) {
+输出 function Validate(endpoint) {
 	return endpoint.interface === 1 && endpoint.usage === 0x0001 && endpoint.usage_page === 0xff00;
 }
 
-export function ImageUrl() {
-	return "https://www.maicong.cn/static/6913c99b847be79366919fac9f2c1c6d.jpg";
+输出 function ImageUrl() {
+	return "https://i.postimg.cc/sX8DPfNh/MCHOSE-G87.png";
 }
