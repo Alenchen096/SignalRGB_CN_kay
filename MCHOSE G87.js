@@ -1,12 +1,12 @@
-export function Name() { return "Mchose G87"; }
-export function VendorId() { return 0x41E4; }
-export function ProductId() { return 0x2201; }
-export function Publisher() { return "Nollie"; }
-export function Size() { return [95, 32]; }
-export function DefaultPosition(){return [10, 100]; }
-export function DefaultScale(){return 2}
+输出 function 名字() { return "Mchose G87"; }
+输出 function VendorId() { return 0x41E4; }
+输出 function ProductId() { return 0x2201; }
+输出 function Publisher() { return "Nollie"; }
+输出 function Size() { return [95, 32]; }
+输出 function DefaultPosition(){return [10, 100]; }
+输出 function DefaultScale(){return 2}
 
-export function ControllableParameters() {
+输出 function ControllableParameters() {
 	return [
 		{"property":"shutdownColor", "group":"lighting", "label":"Shutdown Color", "min":"0", "max":"360", "type":"color", "default":"009bde"},
 		{"property":"LightingMode", "group":"lighting", "label":"Lighting Mode", "type":"combobox", "values":["Canvas", "Forced"], "default":"Canvas"},
@@ -43,21 +43,21 @@ const vKeyNames = [
     "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Ctrl", "Up", "Down", "Left", "Right", "Home", "End"  
 ];
 
-export function Initialize() {}
+输出 function Initialize() {}
 
-export function LedNames() {
+输出 function LedNames() {
 	return vKeyNames;
 }
 
-export function LedPositions() {
+输出 function LedPositions() {
 	return vKeyPositions;
 }
 
-export function Render() {
+输出 function Render() {
 	sendColors();
 }
 
-export function Shutdown() {}
+输出 function Shutdown() {}
 
 function sendColors(shutdown = false) {
 	let rgbdata = grabColors();
